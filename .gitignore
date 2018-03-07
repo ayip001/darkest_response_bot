@@ -102,3 +102,6 @@ ENV/
 
 # praw.ini
 praw.ini
+
+# log/tmp files
+parse_until.txt
