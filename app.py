@@ -34,7 +34,8 @@ def test_scan():
     for comment in comments:
         if comment.id == parse_until:
             return
-        parse_comment(comment)
+        if comment.author != reddit.user.me():
+            parse_comment(comment)
 
 if __name__ == '__main__':
     """
